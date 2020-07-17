@@ -49,17 +49,15 @@ public class SuperheroController {
     //remove superhero from the system, indicated by id
     @PostMapping("/remove/{id}")
     public List<Superhero> removeSuperhero(@PathVariable("id") long heroId){
-
         for (Superhero superhero : superheroes){
             if(superhero.getId() == heroId){
                 superheroes.remove(superhero);
+                return superheroes;
             }
         }
 
-        return superheroes;
-
         //throw new SuperheroNotFoundException();
-        //return null;
+        return null;
     }
 
     //update superhero info, indicated by id
@@ -72,7 +70,7 @@ public class SuperheroController {
             if(superhero.getId() == heroId){
                 superheroes.remove(superhero);
 
-                //need to maintain previous ides
+                //need to maintain previous ids
                 newSuperhero.setId(heroId);
                 superheroes.add(newSuperhero);
                 return newSuperhero;
