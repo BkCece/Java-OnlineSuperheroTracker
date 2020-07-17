@@ -1,5 +1,11 @@
 package ca.cmpt213.a3.onlinesuperherotracker;
 
+/**
+ * Celina Wright
+ * 301380112
+ * ckwright@sfu.ca
+ */
+
 //Required for spring
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

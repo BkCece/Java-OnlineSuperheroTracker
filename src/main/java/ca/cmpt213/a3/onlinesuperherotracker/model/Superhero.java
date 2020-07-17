@@ -1,5 +1,11 @@
 package ca.cmpt213.a3.onlinesuperherotracker.model;
 
+/**
+ * Celina Wright
+ * 301380112
+ * ckwright@sfu.ca
+ */
+
 //Class for holding superhero information
 //Most of the superhero code comes from Assignment 1: SuperheroTracker
 public class Superhero {

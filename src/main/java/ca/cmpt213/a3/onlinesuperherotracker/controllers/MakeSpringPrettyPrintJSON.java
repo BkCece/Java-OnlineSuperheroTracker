@@ -1,5 +1,11 @@
 package ca.cmpt213.a3.onlinesuperherotracker.controllers;
 
+/**
+ * Celina Wright
+ * 301380112
+ * ckwright@sfu.ca
+ */
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
