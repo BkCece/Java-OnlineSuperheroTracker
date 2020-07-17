@@ -8,19 +8,34 @@ public class Superhero {
 
     //Superhero information
     private String name;
-    private String superpower;
-    private double heightCM;
-    private int numCiviliansSaved;
+    private double heightInCm;
+    private int civilianSaveCount;
+    private String superPower;
 
-    //Superhero constructor
-    public Superhero(String name, String superpower, double heightCM, int numCiviliansSaved) {
-        this.name = name;
-        this.superpower = superpower;
-        this.heightCM = heightCM;
-        this.numCiviliansSaved = numCiviliansSaved;
+    //Default construct?
+    public Superhero(){
+
     }
 
+    //Superhero constructor
+    public Superhero(long id, String name, double heightInCm, int civilianSaveCount, String superPower) {
+        this.id = id;
+        this.name = name;
+        this.heightInCm = heightInCm;
+        this.civilianSaveCount = civilianSaveCount;
+        this.superPower = superPower;
+    }
+
+
     //Getters & Setters
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
@@ -29,39 +44,31 @@ public class Superhero {
         this.name = name;
     }
 
-    public String getSuperpower() {
-        return superpower;
+    public double getHeightInCm() {
+        return heightInCm;
     }
 
-    public void setSuperpower(String superpower) {
-        this.superpower = superpower;
+    public void setHeightInCm(double heightInCm) {
+        this.heightInCm = heightInCm;
     }
 
-    public double getHeightCM() {
-        return heightCM;
+    public int getCivilianSaveCount() {
+        return civilianSaveCount;
     }
 
-    public void setHeightCM(double heightCM) {
-        this.heightCM = heightCM;
+    public void setCivilianSaveCount(int civilianSaveCount) {
+        this.civilianSaveCount = civilianSaveCount;
     }
 
-    public int getNumCiviliansSaved() {
-        return numCiviliansSaved;
+    public String getSuperPower() {
+        return superPower;
     }
 
-    public void setNumCiviliansSaved(int numCiviliansSaved) {
-        this.numCiviliansSaved = numCiviliansSaved;
+    public void setSuperPower(String superPower) {
+        this.superPower = superPower;
     }
 
 
     //To String for viewing superhero information
-    @Override
-    public String toString() {
-        return "Superhero{" +
-                "name='" + name + '\'' +
-                ", superpower='" + superpower + '\'' +
-                ", heightCM=" + heightCM +
-                ", numCiviliansSaved=" + numCiviliansSaved +
-                '}';
-    }
+
 }

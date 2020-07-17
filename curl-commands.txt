@@ -10,7 +10,7 @@ curl -i -H "Content-Type: application/json" -X POST -d "{ \"name\": \"Batman\", 
 # Add Captain Marvel as a new superhero, the escape character for the " is for Windows systems
 curl -i -H "Content-Type: application/json" -X POST -d "{ \"name\": \"Captain Marvel\", \"heightInCm\": 170, \"civilianSaveCount\": 200, \"superPower\": \"Proton Blast\" }" localhost:8080/add
 
-# Add Strom as a new superhero, the escape character for the " is for Windows systems
+# Add Storm as a new superhero, the escape character for the " is for Windows systems
 curl -i -H "Content-Type: application/json" -X POST -d "{ \"name\": \"Storm\", \"heightInCm\": 200, \"civilianSaveCount\": 300, \"superPower\": \"Control Weather\" }" localhost:8080/add
 
 # Add Earthworm Jim as a new superhero, the escape character for the " is for Windows systems

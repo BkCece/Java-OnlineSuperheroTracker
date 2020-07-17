@@ -4,10 +4,11 @@ package ca.cmpt213.a3.onlinesuperherotracker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+
 /**
  * Main class to run OST app
  */
+@SpringBootApplication
 public class Application {
     public static void main(String[] args){
         //Run this file: Application
