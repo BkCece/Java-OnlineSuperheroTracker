@@ -74,7 +74,4 @@ public class Superhero {
         this.superPower = superPower;
     }
 
-
-    //To String for viewing superhero information
-
 }

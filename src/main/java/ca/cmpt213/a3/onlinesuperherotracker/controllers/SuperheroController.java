@@ -7,13 +7,11 @@ package ca.cmpt213.a3.onlinesuperherotracker.controllers;
  */
 
 import ca.cmpt213.a3.onlinesuperherotracker.model.Superhero;
-import jdk.vm.ci.meta.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 
@@ -74,20 +72,6 @@ public class SuperheroController {
 
         throw new SuperheroNotFoundException();
     }
-
-    /**
-     * from quiz 3
-    @GetMapping("/superhero/{id}")
-    public Superhero getOneSuperhero(@PathVariable("id") long heroId){
-        for(Superhero superhero : superheroes){
-            if(superhero.getId() == heroId){
-                return superhero;
-            }
-        }
-
-        throw new SuperheroNotFoundException();
-    }
-    */
 
     //update superhero info, indicated by id
     @PostMapping("/update/{id}")
