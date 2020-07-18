@@ -61,7 +61,9 @@ public class SuperheroController {
     }
 
     //remove superhero from the system, indicated by id
+    //return status 201 on success
     @PostMapping("/remove/{id}")
+    @ResponseStatus(HttpStatus.CREATED)
     public List<Superhero> removeSuperhero(@PathVariable("id") long heroId){
         for (Superhero superhero : superheroes){
             if(superhero.getId() == heroId){
@@ -74,7 +76,9 @@ public class SuperheroController {
     }
 
     //update superhero info, indicated by id
+    //return status 201 on success
     @PostMapping("/update/{id}")
+    @ResponseStatus(HttpStatus.CREATED)
     public Superhero updateSuperhero(
             @PathVariable("id") long heroId,
             @RequestBody Superhero newSuperhero
