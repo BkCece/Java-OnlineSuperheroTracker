@@ -2,21 +2,17 @@
 
 ## Assignment 3 Part 2: OST
 ### Description
-- This assignment is for CMPT 213 taught at Simon Fraser University in Summer 2020, taught by Victor Cheung
-- In this part you are going to create an online (but simplified) version of the Superhero Tracker system in Assignment 1 using Sprint Boot REST API.
-- Must respond to commands:
-  - GET /hello
-  - GET /listall
-  - POST /add
-  - POST /remove/id
-  - POST /update/id
-  - (Additional feature:) GET /listTop3
-    
-### Curl Commands 
-- The cURL tool is a command letting users to send and receive data between a client and a server. 
-- **It is available in recent Windows.** 
-- It supports many options but here we only need to do simple GETs/POSTs. For example, the following sends a GET request to a localhost server.
-- *curl -i -H "Content-Type: application/json" -X GET localhost:8080/hello*
+- This assignment is for CMPT 213 at Simon Fraser University, taught by Victor Cheung in Summer 2020
+- This half of the assignment is an online (but simplified) version of the Superhero Tracker system from Assignment 1
+- The online components are built using **Sprint Boot REST API**
+- *The game state is not saved between sessions - no server persistence*
+
+### Concepts and Tools
+- The **cURL** tool is used for this project to send and receive data between client and server, through HTTP Requests
+  - An example cURl command: the following sends a GET request to a localhost server.
+  - *curl -i -H "Content-Type: application/json" -X GET localhost:8080/hello*
+- This project uses the **Gradle** build system in **IntelliJ** to manage dependencies and **Spring Boot** as a tool to integrate web services into Java
+
 
 ## Resources
 - Class to print JSON in [pretty format](https://github.com/drbfraser/SpringBootIntro/blob/master/src/main/java/ca/pledgetovote/controllers/MakeSpringPrettyPrintJSON.java)
